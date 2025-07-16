@@ -2,22 +2,34 @@
   <header class="main-header">
     <div class="header-content">
       <!-- Logo -->
-      <img src="/Images/LogoSyntrax.png" alt="Logo" class="logo" />
+      <router-link to="/">
+        <img src="/Images/LogoSyntrax.png" alt="Logo Syntrax" class="logo" />
+      </router-link>
 
       <!-- Links -->
       <nav class="nav-links">
         <router-link to="/">Home</router-link>
-        <router-link to="/features">Features</router-link>
-        <router-link to="/contact">Contact</router-link>
+        <router-link to="/about">Sobre nosotros</router-link>
+        <router-link to="/services">Servicios</router-link>
+        <router-link to="/contact">Contacto</router-link>
 
         <a
           href="https://www.linkedin.com/in/facundozin/"
           target="_blank"
           rel="noopener noreferrer"
-          class="linkedin-logo"
+          class="redes-sociales"
           aria-label="LinkedIn de la empresa"
         >
           <font-awesome-icon :icon="['fab', 'linkedin']" />
+        </a>
+        <a
+          href="https://www.instagram.com/facu_zin/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="redes-sociales"
+          aria-label="Instagram de la empresa"
+        >
+          <font-awesome-icon :icon="['fab', 'instagram']" />
         </a>
       </nav>
     </div>
@@ -104,13 +116,13 @@
   background: white;
 }
 
-.linkedin-logo {
+.redes-sociales {
   display: flex;
   align-items: center;
   padding-left: 0.5rem;
 }
 
-.linkedin-logo svg {
+.redes-sociales svg {
   height: 24px;
   width: 24px;
   fill: white; /* blanco */
@@ -118,7 +130,7 @@
   cursor: pointer;
 }
 
-.linkedin-logo:hover svg {
+.redes-sociales:hover svg {
   fill: #0a66c2; /* azul LinkedIn en hover */
 }
 </style>

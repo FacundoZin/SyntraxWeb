@@ -1,16 +1,16 @@
 import './assets/main.css'
 
-import { createApp } from 'vue'
 import { createPinia } from 'pinia'
+import { createApp } from 'vue'
 
 import App from './App.vue'
 import router from './router'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
+import { faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
-library.add(faLinkedin)
+library.add(faLinkedin, faInstagram)
 
 const app = createApp(App)
 

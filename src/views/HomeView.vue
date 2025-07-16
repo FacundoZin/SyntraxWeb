@@ -10,7 +10,7 @@
         eficiencia y crezca sin limites.
       </p>
 
-      <button>Contáctanos</button>
+      <button>Conoce nuestros servicios</button>
     </div>
   </section>
 </template>
@@ -33,7 +33,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .hero-content {
@@ -48,26 +48,37 @@
 }
 
 .hero p {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 1);
   font-size: 1.2rem;
   font-weight: 300;
   margin-bottom: 2rem;
-  max-width: 1000px; /* limita el ancho para que no se estire demasiado */
+  max-width: 850px; /* limita el ancho para que no se estire demasiado */
   line-height: 1.3; /* reduce el espacio entre líneas */
   margin-right: auto; /* centra el párrafo */
 }
 
 .hero button {
-  background: #ffffff;
-  color: #000;
+  background: transparent;
+  color: #66f1c2; /* Aquamarine claro */
   padding: 0.8rem 2rem;
   font-size: 1rem;
-  border: none;
+  font-weight: 600;
+  border: 2px solid #66f1c2;
   border-radius: 4px;
   cursor: pointer;
-  transition: 0.3s;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
 }
 
 .hero button:hover {
-  background: #ddd;
+  background: #017371; /* Aquamarine oscuro */
+  color: white;
+  border-color: #017371;
+}
+
+.hero button:active {
+  transform: scale(0.97);
 }
 </style>
