@@ -42,6 +42,7 @@
 }
 
 .hero h1 {
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 1);
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1rem;
@@ -52,11 +53,11 @@
 }
 
 .hero p {
-  text-shadow: 0 2px 3px rgba(0, 0, 0, 1);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
   font-size: 1.2rem;
   font-weight: 300;
   margin-bottom: 2rem;
-  max-width: 850px; /* limita el ancho para que no se estire demasiado */
+  max-width: 800px; /* limita el ancho para que no se estire demasiado */
   line-height: 1.3; /* reduce el espacio entre líneas */
   margin-right: auto; /* centra el párrafo */
   transition:
@@ -67,32 +68,33 @@
 
 .hero h1:hover,
 .hero p:hover {
-  /* sombra más intensa */
-  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
   /* sutil movimiento hacia arriba */
   transform: translateY(-4px);
 }
 
 .hero button {
   background: transparent;
-  text-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
   color: #ffffff; /* Aquamarine claro */
   padding: 0.8rem 2rem;
   font-size: 1rem;
   font-weight: 600;
-  border: 3px solid #2cffb9;
+  border: 2.8px solid #2cffb9;
   border-radius: 9px;
   cursor: pointer;
   transition:
-    background-color 0.3s ease,
-    color 0.3s ease,
-    border-color 0.3s ease;
+    background-color 0.5s ease,
+    color 0.5s ease,
+    border-color 0.5s ease;
 }
 
 .hero button:hover {
   background: #2cffb9; /* Aquamarine oscuro */
   color: white;
   border-color: #2cffb9;
+
+  /* sutil movimiento hacia arriba */
+  transform: translateY(-4px);
 }
 
 .hero button:active {
