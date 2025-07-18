@@ -8,11 +8,10 @@
 
       <!-- Links -->
       <nav class="nav-links">
-        <router-link to="/">Home</router-link>
-        <router-link to="/about">Nosotros</router-link>
-        <router-link to="/services">Servicios</router-link>
-        <router-link to="/contact">Contacto</router-link>
-
+        <RouterLink :to="{ hash: '#home' }">Home</RouterLink>
+        <RouterLink :to="{ hash: '#about' }">About</RouterLink>
+        <RouterLink :to="{ hash: '#services' }">Services</RouterLink>
+        <RouterLink :to="{ hash: '#contact' }">Contact</RouterLink>
         <a
           href="https://www.linkedin.com/in/facundozin/"
           target="_blank"

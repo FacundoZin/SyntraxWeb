@@ -5,9 +5,11 @@ import Header from './components/Header.vue'
 
 <template>
   <Header />
-  <RouterView />
+  <router-view />
 </template>
 
 <style>
-/* Acá podés poner estilos globales básicos si querés, pero nada obligatorio */
+.router-container {
+  overflow: auto; /* para scroll si se pasa */
+}
 </style>

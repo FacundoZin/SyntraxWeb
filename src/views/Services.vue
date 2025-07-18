@@ -93,24 +93,43 @@ const services = [
 .service-content p {
   margin: 0 0 1rem;
   font-size: 1rem;
-  color: white;
+  color: rgba(255, 255, 255, 0.697);
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
 }
 
+/* BOTÓN DE LAS CARDS CON ESTILO DEL HERO */
+/* --- BOTÓN OCULTO POR DEFECTO --- */
 .service-btn {
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
   display: inline-block;
-  background: #23cd94;
+  background: rgba(37, 36, 36, 0.9);
   color: #fff;
-  padding: 0.6rem 1.2rem;
-  border-radius: 6px;
+  padding: 0.6rem 1.4rem;
+  border-radius: 999px; /* estilo pill como el del hero */
   text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s;
+  font-size: 0.85rem;
+  font-weight: 100;
+  cursor: pointer;
+  border: none;
+  outline: none;
+
+  /* oculto inicialmente */
+  opacity: 0;
+  transform: translateY(10px); /* un poco desplazado hacia abajo */
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    background 0.3s ease;
 }
 
+/* --- CUANDO HOVER EN LA TARJETA --- */
+.service-card:hover .service-btn {
+  opacity: 1; /* aparece */
+  transform: translateY(0); /* vuelve a su posición normal */
+}
+
+/* --- HOVER DIRECTO DEL BOTÓN --- */
 .service-btn:hover {
-  background: #20bb88;
+  background: rgba(25, 23, 23, 0.95);
 }
 
 /* Responsive */

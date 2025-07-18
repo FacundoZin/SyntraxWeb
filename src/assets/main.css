@@ -3,7 +3,7 @@
 
 #app {
   font-family: 'Bebas Neue', cursive;
-  letter-spacing: 0.1em; /* ajustalo a gusto, puede ser 0.05em, 0.2em, etc */
+  /*letter-spacing: 0.1em; /* ajustalo a gusto, puede ser 0.05em, 0.2em, etc */
 
   max-width: none;
   width: 100%;
@@ -12,6 +12,13 @@
   font-weight: normal;
 }
 
+html,
+body {
+  background: #000;
+}
+#app button {
+  font-family: inherit;
+}
 a,
 .green {
   text-decoration: none;
