@@ -1,6 +1,10 @@
 @import './base.css';
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 #app {
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 0.1em; /* ajustalo a gusto, puede ser 0.05em, 0.2em, etc */
+
   max-width: none;
   width: 100%;
   margin: 0;

@@ -9,15 +9,16 @@
         integrales de Software, IoT e Inteligencia Artificial para que tu empresa mejore su
         eficiencia y crezca sin limites.
       </p>
-
-      <button>Conoce nuestros servicios</button>
     </div>
+    <router-link to="/services"><button>Conoce nuestros servicios</button></router-link>
   </section>
 </template>
 
 <style scoped>
 .hero {
-  height: 100vh; /* que ocupe toda la altura visible */
+  margin-top: 70px; /* espacio igual a la altura del header */
+  height: 85vh; /* ahora solo ocupa 60% del alto visible, podés ajustar a gusto */
+  min-height: 400px; /* para que no quede muy chico en pantallas bajas */
   background: url('/Images/Heroplaya.jpg') center/cover no-repeat;
   display: flex;
   flex-direction: column;
@@ -72,29 +73,42 @@
   transform: translateY(-4px);
 }
 
+.hero {
+  position: relative; /* necesario para que el botón se posicione dentro de la sección */
+  height: 60vh; /* tu altura parcial */
+  background: url('/Images/Heroplaya.jpg') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* el texto queda centrado */
+  text-align: center;
+  color: white;
+}
+
 .hero button {
-  background: transparent;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-  color: #ffffff; /* Aquamarine claro */
-  padding: 0.8rem 2rem;
-  font-size: 1rem;
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background: rgba(0, 0, 0, 0.512);
+  color: white;
+  padding: 0.6rem 1.8rem; /* un poco menos padding para equilibrio */
+  font-size: 0.85rem; /* texto más chico */
   font-weight: 600;
-  border: 2.8px solid #2cffb9;
-  border-radius: 9px;
+  border-radius: 999px;
   cursor: pointer;
+
+  border: none; /* saca cualquier borde */
+  outline: none; /* saca outline al click */
+  box-shadow: none; /* elimina sombras */
+
   transition:
-    background-color 0.5s ease,
-    color 0.5s ease,
-    border-color 0.5s ease;
+    background 0.3s ease,
+    transform 0.2s ease;
 }
 
 .hero button:hover {
-  background: #2cffb9; /* Aquamarine oscuro */
-  color: white;
-  border-color: #2cffb9;
-
-  /* sutil movimiento hacia arriba */
-  transform: translateY(-4px);
+  background: rgba(0, 0, 0, 0.7);
+  transform: translateY(-3px);
 }
 
 .hero button:active {

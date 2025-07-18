@@ -4,21 +4,25 @@ const services = [
     title: 'Página web + posicionamiento',
     desc: 'Diseño web moderno + optimización SEO para destacar tu marca.',
     img: '/Images/WebServices.png',
+    link: '/servicios/web', // opcional para redirigir
   },
   {
     title: 'Software a medida',
     desc: 'Soluciones personalizadas para automatizar y optimizar procesos internos.',
     img: '/Images/SoftwareServices.jpg',
+    link: '/servicios/software',
   },
   {
     title: 'IoT',
     desc: 'Integración de dispositivos para monitoreo y control inteligente.',
     img: '/Images/IoT.jpeg',
+    link: '/servicios/iot',
   },
   {
     title: 'Despliegue en la nube',
     desc: 'Deployment seguro y escalable en plataformas como AWS, Azure o GCP.',
     img: '/Images/ServicioNube3.png',
+    link: '/servicios/nube',
   },
 ]
 </script>
@@ -34,6 +38,7 @@ const services = [
       <div class="service-content">
         <h3>{{ serv.title }}</h3>
         <p>{{ serv.desc }}</p>
+        <a class="service-btn" :href="serv.link">Ver más</a>
       </div>
     </div>
   </section>
@@ -80,16 +85,32 @@ const services = [
 .service-content h3 {
   margin: 0 0 0.5rem;
   font-size: 1.5rem;
-  font-weight: 600; /* MÁS GRUESA */
+  font-weight: 600;
   color: white;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .service-content p {
-  margin: 0;
+  margin: 0 0 1rem;
   font-size: 1rem;
-  color: #ddd;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+.service-btn {
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  background: #23cd94;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.service-btn:hover {
+  background: #20bb88;
 }
 
 /* Responsive */
@@ -99,8 +120,9 @@ const services = [
     align-items: center;
   }
   .service-content {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.1);
     text-align: center;
+    padding: 2rem;
   }
 }
 </style>

@@ -9,7 +9,7 @@
       <!-- Links -->
       <nav class="nav-links">
         <router-link to="/">Home</router-link>
-        <router-link to="/about">Sobre nosotros</router-link>
+        <router-link to="/about">Nosotros</router-link>
         <router-link to="/services">Servicios</router-link>
         <router-link to="/contact">Contacto</router-link>
 
@@ -42,7 +42,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  /*background: rgba(0, 0, 0, 0.05);*/
+  background-color: black;
   /*backdrop-filter: blur(4px);*/
   z-index: 1000;
   padding: 0; /* sin espacio extra */
