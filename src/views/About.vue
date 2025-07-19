@@ -1,131 +1,76 @@
 <template>
   <div class="about-container">
-    <!-- Hero corto -->
-    <section class="about-hero">
-      <h1>Sobre Nosotros</h1>
-      <p>Innovación, tecnología y soluciones para el crecimiento de tu empresa</p>
-    </section>
-
-    <!-- Sección descriptiva -->
-    <section class="about-description">
-      <h2>Quiénes somos</h2>
+    <div class="about-text">
+      <h1>Sobre nosotros</h1>
       <p>
-        Somos un equipo apasionado por la tecnología, especializado en crear soluciones informáticas
-        de alto impacto. Nuestro objetivo es ayudar a empresas y organizaciones a optimizar sus
-        procesos, integrando software, IoT e Inteligencia Artificial para impulsar su crecimiento.
+        Somos proveedores de soluciones Informaticas, con enfoque en la calidad y la innovación.
+        nuestra mision es transformar procesos complejos en flujos de trabajo eficientes y
+        automatizados, utilizando las últimas tecnologías en Software, IoT e Inteligencia Artificial
+        para que tu empresa mejore su eficiencia y puedas tener un mejor control de tu negocio.
+      </p>
+
+      <h1>Como trabajamos</h1>
+      <p>
+        en primera instancia nos contactamos con vos para conocer mejor los procesos de tu empresa,
+        en base a eso hacemos un análisis de necesidad y requerimientos para identificar los puntos
+        de mejora.
+      </p>
+
+      <p>
+        luego de esta instancia, te presentamos una propuesta de solución y un presupuesto. si estas
+        de acuerdo, comenzamos a trabajar en el desarrollo de la solución.
+      </p>
+
+      <p>
+        nosotros nos encargamos de todo el proceso, desde la planificación hasta la implementación y
+        el soporte post-lanzamiento. nuestro objetivo es asegurarnos de que la solución se adapte
+        perfectamente a tus necesidades y que obtengas el máximo beneficio de ella.
       </p>
       <p>
-        Creemos en la innovación como motor de cambio y trabajamos junto a nuestros clientes para
-        ofrecer servicios personalizados que se adapten a cada necesidad.
+        Si crees que tu empresa puede benificiarse de una solución a medida no dudes en
+        contactarnos.
       </p>
-    </section>
-
-    <!-- Valores / Ventajas -->
-    <section class="about-values">
-      <div class="value-card">
-        <h3>🚀 Innovación</h3>
-        <p>Siempre incorporamos las últimas tecnologías para ofrecer soluciones modernas.</p>
-      </div>
-      <div class="value-card">
-        <h3>🤝 Compromiso</h3>
-        <p>Trabajamos codo a codo con cada cliente para garantizar resultados reales.</p>
-      </div>
-      <div class="value-card">
-        <h3>💡 Experiencia</h3>
-        <p>Contamos con expertos en software, IoT y despliegue en la nube.</p>
-      </div>
-    </section>
-
-    <!-- Mensaje final -->
-    <section class="about-footer">
-      <h2>¿Listo para trabajar juntos?</h2>
-      <p>Contáctanos y demos el siguiente paso para transformar tu empresa.</p>
-    </section>
+    </div>
   </div>
 </template>
 
 <style scoped>
 .about-container {
+  margin-top: 5rem;
+  background: url('/Images/About3.jpg') center/cover no-repeat;
   color: white;
   font-family: 'Oswald', sans-serif;
   padding: 0 2rem;
-}
+  min-height: 100vh;
 
-/* HERO */
-.about-hero {
-  text-align: center;
-  padding: 6rem 2rem 4rem;
-  background: rgba(0, 0, 0, 0.3);
-}
-.about-hero h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-.about-hero p {
-  font-size: 1.3rem;
-  font-weight: 300;
-}
-
-/* DESCRIPCIÓN */
-.about-description {
-  max-width: 800px;
-  margin: 4rem auto;
-  text-align: center;
-}
-.about-description h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  font-weight: 600;
-}
-.about-description p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 1rem;
-  color: #ddd;
-}
-
-/* VALORES */
-.about-values {
+  /* Para que el texto se destaque un poco más */
   display: flex;
-  gap: 2rem;
+  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  margin: 4rem auto;
-  max-width: 1000px;
+  text-align: center;
+  backdrop-filter: brightness(0.8);
 }
-.value-card {
-  flex: 1 1 250px;
-  background: rgba(0, 0, 0, 0.4);
+
+.about-text {
+  max-width: 800px;
   padding: 2rem;
   border-radius: 10px;
-  text-align: center;
-  transition: background 0.3s ease;
-}
-.value-card:hover {
-  background: rgba(0, 0, 0, 0.6);
-}
-.value-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.8rem;
-}
-.value-card p {
-  font-size: 1rem;
-  color: #ccc;
 }
 
-/* FOOTER SECTION */
-.about-footer {
-  text-align: center;
-  padding: 4rem 2rem;
-  background: rgba(0, 0, 0, 0.2);
-}
-.about-footer h2 {
-  font-size: 2rem;
+.about-text h1 {
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  font-weight: 500;
+  font-size: 1.8rem;
   margin-bottom: 1rem;
+  text-transform: uppercase;
 }
-.about-footer p {
-  font-size: 1.2rem;
-  color: #ddd;
+
+.about-text p {
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+
+  font-weight: 100;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  margin-bottom: 1rem;
 }
 </style>

@@ -6,19 +6,19 @@
         <h2>CONTACTO</h2>
         <p>
           <font-awesome-icon :icon="['fas', 'location-dot']" />
-          <strong> Dirección:</strong> Cordoba 1636,San Francisco, Cordoba
+          <span class="label">Dirección:</span> Córdoba 1636, San Francisco, Córdoba
         </p>
         <p>
           <font-awesome-icon :icon="['fas', 'phone']" />
-          <strong> Teléfono:</strong> +54 (3564)-653136
+          <span class="label">Teléfono:</span> +54 (3564)-653136
         </p>
         <p>
           <font-awesome-icon :icon="['fas', 'envelope']" />
-          <strong> Email:</strong> Syntrax@gmail.com
+          <span class="label">Email:</span> Syntrax@gmail.com
         </p>
         <p>
           <font-awesome-icon :icon="['fas', 'clock']" />
-          <strong> Horario:</strong> Lunes a Viernes, 9:00 - 18:00
+          <span class="label">Horario:</span> Lunes a Viernes, 9:00 - 18:00
         </p>
       </div>
 
@@ -39,7 +39,7 @@
 
 <style scoped>
 .contact-section {
-  margin-top: 6rem;
+  margin-top: 5rem;
   width: 100%;
   padding: 3rem 1rem;
   display: flex;
@@ -53,28 +53,48 @@
   gap: 2rem;
   max-width: 1080px;
   width: 100%;
-  background: #414141;
-  padding: 1.8rem;
+  background: #444040d3;
+  padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+  font-family: 'Bebas Neue', sans-serif; /* Para títulos */
+  color: white;
 }
 
 .contact-info {
-  margin-top: 1.2rem;
+  text-align: center; /* para centrar texto en general */
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
+/* TITULOS con Bebas Neue */
 .contact-info h2 {
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   font-weight: 500;
-  color: white;
-  font-size: 2rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
   margin-bottom: 1rem;
 }
 
-.contact-info p {
-  color: white;
+/* PÁRRAFOS y LABELS con Oswald para fuente fina */
+.contact-info p,
+.contact-info .label {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 100;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-info .label {
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-right: 0.3rem;
 }
 
 .contact-map {

@@ -41,7 +41,9 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5); /* negro semitransparente al 50% */
+  backdrop-filter: blur(8px); /* desenfoque sobre el fondo */
+  -webkit-backdrop-filter: blur(8px); /* para compatibilidad */
   /*backdrop-filter: blur(4px);*/
   z-index: 1000;
   padding: 0; /* sin espacio extra */
