@@ -83,7 +83,7 @@
 .contact-info .label {
   font-family: 'Oswald', sans-serif;
   font-weight: 100;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   line-height: 1.8rem;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
   display: flex;

@@ -30,6 +30,26 @@
         Si crees que tu empresa puede benificiarse de una solución a medida no dudes en
         contactarnos.
       </p>
+      <router-link to="/services">
+        <button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"
+            />
+          </svg>
+
+          <span class="btn-text"> contactate con nosotros</span>
+        </button>
+      </router-link>
     </div>
   </div>
 </template>
@@ -72,5 +92,69 @@
   font-size: 1.1rem;
   line-height: 1.8rem;
   margin-bottom: 1rem;
+}
+
+.about-container button {
+  display: block;
+  margin: 2rem auto 0; /* 👈 esto lo centra horizontalmente */
+
+  background: rgba(37, 36, 36, 0.9);
+  color: white;
+
+  /* tamaño inicial */
+  height: 50px;
+  width: 50px;
+  border-radius: 999px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* ✅ SIEMPRE a la izquierda */
+  padding-left: calc((50px - 1.5rem) / 2);
+  font-size: 0.85rem;
+  font-weight: 100;
+
+  transition:
+    width 0.3s ease,
+    padding 0.3s ease,
+    background 0.3s ease,
+    transform 0.3s ease;
+
+  overflow: hidden;
+  gap: 0.3rem;
+}
+
+/* Hover suave */
+.about-container button:hover {
+  background: rgba(25, 23, 23, 0.95);
+  transform: translateY(-3px);
+}
+
+/* Hover en el hero → se expande */
+.about-container:hover button {
+  width: 190px;
+  padding-left: 1.2rem; /* ✅ cuando se abre, padding normal */
+}
+
+/* Texto del botón */
+.about-container button .btn-text {
+  opacity: 0;
+  width: 0;
+  white-space: nowrap;
+  transition: opacity 0.3s ease 0.1s;
+}
+
+.about-container:hover button .btn-text {
+  opacity: 1;
+  width: auto;
+  margin-left: 0.5rem;
+}
+
+.about-container button svg {
+  width: 1.5rem; /* ✅ igual que FontAwesome */
+  height: 1.5rem;
+  flex-shrink: 0; /* ✅ evita que se deforme al expandir */
 }
 </style>
