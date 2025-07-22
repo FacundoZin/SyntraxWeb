@@ -1,5 +1,6 @@
+import FormConsulta from '@/views/FormConsulta.vue'
 import Landing from '@/views/Landing.vue'
-import { createRouter, createWebHashHistory, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -8,6 +9,11 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: Landing,
+    },
+    {
+      path: '/consultas',
+      name: 'consultas',
+      component: FormConsulta,
     },
   ],
   scrollBehavior(to) {

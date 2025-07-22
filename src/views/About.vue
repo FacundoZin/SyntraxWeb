@@ -30,7 +30,7 @@
         Si crees que tu empresa puede benificiarse de una solución a medida no dudes en
         contactarnos.
       </p>
-      <router-link to="/services">
+      <router-link to="/consultas">
         <button>
           <svg
             xmlns="http://www.w3.org/2000/svg"

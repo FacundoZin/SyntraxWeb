@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import Header from '@/components/Header.vue'
-import HomeView from './HomeView.vue'
-import Services from './Services.vue'
 import About from './About.vue'
 import Contact from './Contact.vue'
+import FormConsulta from './FormConsulta.vue'
+import HomeView from './HomeView.vue'
+import Services from './Services.vue'
 </script>
 
 <template>
@@ -21,6 +22,9 @@ import Contact from './Contact.vue'
     </section>
     <section id="contact">
       <Contact />
+    </section>
+    <section id="consulta">
+      <FormConsulta />
     </section>
   </div>
 </template>
