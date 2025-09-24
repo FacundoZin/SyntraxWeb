@@ -13,7 +13,6 @@ yarn-error.log*
 pnpm-debug.log*
 
 # Archivos de compilación
-dist/
 *.local
 
 # Archivos de sistema
